@@ -16,7 +16,7 @@ pipeline {
                     sh """
                         echo "Hello, this is Build"
                         echo "Project is : $PROJECT"
-                        sleep 15
+                        echo "Automatic trigger"
                     """ 
                 }
             }
