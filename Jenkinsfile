@@ -39,7 +39,7 @@ pipeline {
     post {
         always {
             // Clean up or notify team
-            echo 'Pipeline complete'
+            echo 'Pipeline complete' 
         }
         success {
             echo 'Pipeline succeeded!'
