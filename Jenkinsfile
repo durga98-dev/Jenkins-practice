@@ -30,7 +30,6 @@ pipeline {
                 script {
                     sh """
                         echo "Hello, this is Deploy"
-                        ghgfhg
                     """ 
                 }
             }
