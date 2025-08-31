@@ -1,6 +1,9 @@
 pipeline {
     agent { label 'nodejs-agent1'}  // Define the agent (can be any available node)
-
+    environment{
+        PROJECT = 'Expense'
+        COMPONENT = 'Backend'
+    }
     stages {
         stage('Build') {
             steps {
@@ -8,6 +11,7 @@ pipeline {
                 script {
                     sh """
                         echo "Hello, this is Build"
+                        echo "Project is : $PROJECT"
                     """ 
                 }
             }
