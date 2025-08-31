@@ -6,7 +6,9 @@ pipeline {
             steps {
                 // Build the application (for example, a Maven project)
                 script {
-                    sh 'mvn clean install'  // Replace with your build tool
+                    sh """
+                        echo "Hello, this is Build"
+                    """ 
                 }
             }
         }
@@ -15,7 +17,9 @@ pipeline {
             steps {
                 // Run unit tests
                 script {
-                    sh 'mvn test'  // Replace with your test command
+                    sh """
+                        echo "Hello, this is Test"
+                    """ 
                 }
             }
         }
@@ -24,7 +28,9 @@ pipeline {
             steps {
                 // Deploy the application (for example, to a staging environment)
                 script {
-                    sh './deploy.sh'  // Replace with your deployment script/command
+                    sh """
+                        echo "Hello, this is Deploy"
+                    """ 
                 }
             }
         }
