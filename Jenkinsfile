@@ -1,5 +1,5 @@
 pipeline {
-    agent { }  // Define the agent (can be any available node)
+    agent any // Define the agent (can be any available node)
     environment{
         PROJECT = 'Expense'
         COMPONENT = 'Backend'
