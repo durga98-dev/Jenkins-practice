@@ -1,5 +1,5 @@
 pipeline {
-    //agent { label 'nodejs-agent1'}  // Define the agent (can be any available node)
+    agent { }  // Define the agent (can be any available node)
     environment{
         PROJECT = 'Expense'
         COMPONENT = 'Backend'
