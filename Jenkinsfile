@@ -49,6 +49,7 @@ pipeline {
         always {
             // Clean up or notify team
             echo 'Pipeline complete' 
+            deleteDir()
         }
         success {
             echo 'Pipeline succeeded!'

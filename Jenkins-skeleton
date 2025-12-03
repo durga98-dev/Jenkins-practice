@@ -1,0 +1,53 @@
+pipeline{
+    agent{}
+    environment{
+
+    }
+    parameters{
+        
+    }
+    options{
+
+    }
+    stages {
+        stage('Build') {
+            steps {
+                script {
+                    sh"""
+                        echo "This is Build"
+                    """
+                }   
+            }
+        }
+        stage('Test'){
+            steps{
+                script{
+                    sh"""
+                        echo " This is Test"
+                    """
+                }            
+            }
+        }
+        stage('Deploy'){
+            steps{
+                script{
+                    sh"""
+                        echo " This is Deploy"
+                    """
+                }            
+            }
+        }
+    }
+
+    post{
+        always{
+            echo "Pipeline complete"
+        }
+        success{
+            echo "Pipeline success"
+        }
+        failure{
+            echo "Pipeline failure"
+        }
+    }
+}
